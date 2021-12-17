@@ -15,8 +15,8 @@ import org.springframework.data.mongodb.core.mapping.Document;
  */
 
 @Document (collection = "cleaningproducts")
-@Data
 @NoArgsConstructor
+@Data
 @AllArgsConstructor
 
 public class Product {
