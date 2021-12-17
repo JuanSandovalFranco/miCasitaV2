@@ -25,6 +25,7 @@ public class User {
      * Datos para la creacion de la tabla User
      */
     @Id
+    @NonNull
     private Integer id;
     private String identification;
     private String name;
