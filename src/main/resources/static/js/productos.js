@@ -231,6 +231,8 @@ async function BorrarProducto(id){
 
     CleanFields()
 
+    DataProductos()
+
     alert("Borrado con exito")
 }
 
