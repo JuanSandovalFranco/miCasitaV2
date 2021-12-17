@@ -114,7 +114,7 @@ async function setFieldsToEdit(id){
         tabla+="<td><img src='"+e.photography+"' width='200' height='150'/></td>"
 
         tabla+='<td><button class="btn btn-warning" onclick="setFieldsToEdit('+"'"+e.reference+"'"+')">Actualizar</button></td>'
-        tabla+="<td><button class='btn btn-danger' onclick='BorrarProducto("+e.reference+"')'>Borrar</button></td>"
+        tabla+="<td><button class='btn btn-danger' onclick='BorrarProducto("+'"'+ e.reference + '"' +")'>Borrar</button></td>"
 
         tabla+="</tr>"
         $("#content-to-add").append(tabla);
