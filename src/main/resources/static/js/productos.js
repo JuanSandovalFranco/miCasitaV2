@@ -32,7 +32,7 @@ const CleanFields = ()=>{
 
 async function setFieldsToEdit(id){
 
-    const peticion = await fetch("http://localhost:8080/api/cleaningproduct/all",{
+    const peticion = await fetch("http://168.138.133.236:8080/api/cleaningproduct/all",{
         method:"GET",
         headers:{
             "Content-type":"application/json"
@@ -80,7 +80,7 @@ async function setFieldsToEdit(id){
  async function DataProductos(){
      
 
-    const peticion = await fetch("http://localhost:8080/api/cleaningproduct/all",{
+    const peticion = await fetch("http://168.138.133.236:8080/api/cleaningproduct/all",{
         method:"GET",
         headers:{
             "Content-type":"application/json"
@@ -152,7 +152,7 @@ async function setFieldsToEdit(id){
   console.log(datos)
 
 
-  const peticion = await fetch("http://localhost:8080/api/cleaningproduct/new",{
+  const peticion = await fetch("http://168.138.133.236:8080/api/cleaningproduct/new",{
       method:'POST',
       headers:{
           "Content-Type":"application/json"
@@ -197,7 +197,7 @@ async function ActualizarProducto(){
     console.log(datos)
 
 
-    const peticion = await fetch("http://localhost:8080/api/cleaningproduct/update",{
+    const peticion = await fetch("http://168.138.133.236:8080/api/cleaningproduct/update",{
         method:'PUT',
         headers:{
             "Content-Type":"application/json"
@@ -221,7 +221,7 @@ async function BorrarProducto(id){
 
    
 
-    const peticion = await fetch("http://localhost:8080/api/cleaningproduct/" + id,{
+    const peticion = await fetch("http://168.138.133.236:8080/api/cleaningproduct/" + id,{
         method:'DELETE',
         headers:{
             "Content-Type":"application/json"

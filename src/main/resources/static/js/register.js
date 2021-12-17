@@ -56,7 +56,7 @@ async function IniciarSesion() {
   console.log(a);
   console.log(DatosUsuario);
 
-  const respuesta = await fetch("http://localhost:8080/api/user/new", {
+  const respuesta = await fetch("http://168.138.133.236:8080/api/user/new", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

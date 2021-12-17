@@ -57,7 +57,7 @@ $("#IniciarSesion").click((e)=>{
     async function IniciarSesion(){
 
 
-        const respuesta = await fetch("http://localhost:8080/api/user/"+ $("#values-email").val()+"/"+$("#values-password").val() , {
+        const respuesta = await fetch("http://168.138.133.236:8080/api/user/"+ $("#values-email").val()+"/"+$("#values-password").val() , {
             method:"GET",
             headers:{
                 'Content-Type':'application/json'

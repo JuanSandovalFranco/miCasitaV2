@@ -50,7 +50,7 @@ const CleanFields = ()=>{
 
 async function setFieldsToEdit(id){
 
-    const peticion = await fetch("http://localhost:8080/api/user/all",{
+    const peticion = await fetch("http://168.138.133.236:8080/api/user/all",{
         method:"GET",
         headers:{
             "Content-type":"application/json"
@@ -95,7 +95,7 @@ async function setFieldsToEdit(id){
  async function Datauser(){
      
 
-    const peticion = await fetch("http://localhost:8080/api/user/all",{
+    const peticion = await fetch("http://168.138.133.236:8080/api/user/all",{
         method:"GET",
         headers:{
             "Content-type":"application/json"
@@ -161,7 +161,7 @@ async function setFieldsToEdit(id){
         console.log(datos)
     
     
-        const peticion = await fetch("http://localhost:8080/api/user/new",{
+        const peticion = await fetch("http://168.138.133.236:8080/api/user/new",{
             method:'POST',
             headers:{
                 "Content-Type":"application/json"
@@ -208,7 +208,7 @@ async function ActualizarUsuario(){
     
         
     
-        const peticion = await fetch("http://localhost:8080/api/user/update",{
+        const peticion = await fetch("http://168.138.133.236:8080/api/user/update",{
             method:'PUT',
             headers:{
                 "Content-Type":"application/json"
@@ -232,7 +232,7 @@ async function BorrarUsuario(id){
 
     camposVacios();
 
-    const peticion = await fetch("http://localhost:8080/api/user/" + id,{
+    const peticion = await fetch("http://168.138.133.236:8080/api/user/" + id,{
         method:'DELETE',
         headers:{
             "Content-Type":"application/json"

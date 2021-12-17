@@ -2,7 +2,7 @@ let id = 0;
 
 
 const GenerarId = async () => {
-  const peticion = await fetch("http://localhost:8080/api/user/all", {
+  const peticion = await fetch("http://168.138.133.236:8080/api/user/all", {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
